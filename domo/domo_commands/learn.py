@@ -1,12 +1,19 @@
 # -*- coding: utf-8 -*-
+"""
+Aks for a phrase and tries to extract its text. If not, will query
+an external STT engine to get the correction.
+"""
 import time
 import os
-import audio_inputs
-from dialogs import DialogManager
+import domo.audio_inputs
+from domo.dialogs import DialogManager
 
 class LearnCommand(object):
 
     def __init__(self, config, tts, training_stt, corrector_stt):
+        """
+        :param config learning configuration
+        """
         self.training_stt = training_stt
         self.corrector_stt = corrector_stt
         self.tts = tts
@@ -20,7 +27,7 @@ class LearnCommand(object):
         audio_id=time.strftime("%Y%m%d-%H%M%S")
         filename="audio-" + audio_id
         filename_ext= self.audio_folder + "/" + filename + ".wav"
-        audio_inputs.listen(filename_ext)
+        domo.audio_inputs.listen(filename_ext)
 
         text = self.training_stt.process_file(filename_ext)
         correction = text

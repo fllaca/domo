@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
-import time
-import os
-import audio_inputs
-from dialogs import DialogManager
+"""
+Simple command that just repeats what the user says
+"""
+from domo.dialogs import DialogManager
 
 class RepeatCommand(object):
 

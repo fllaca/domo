@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-import audio_inputs
+import domo.audio_inputs
 """
 Human dialog functions
 """
@@ -18,7 +18,7 @@ class DialogManager(object):
 
     def prompt(self, question):
         self.tts.say(question)
-        audio_inputs.listen("question.wav")
+        domo.audio_inputs.listen("question.wav")
         return self.stt.process_file("question.wav")
 
     def say(self, text):

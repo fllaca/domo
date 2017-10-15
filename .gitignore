@@ -5,3 +5,17 @@ house_model/
 spanish/
 
 venv/
+
+confirm\.wav
+
+output\.wav
+
+pocketsphinx/
+
+question\.wav
+
+sphinxbase/
+
+sphinxtrain/
+
+txt\.mp3
