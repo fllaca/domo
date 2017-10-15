@@ -1,0 +1,16 @@
+abrir la puerta del garaje
+encender la luz de la cocina
+apagar la luz del garaje
+cerrar la puerta de la cocina
+descargar piratas del caribe
+cierra la ventana del salón
+apaga la luz del baño
+cerrar la puerta del garaje
+enciende la luz del garaje
+sube la persiana del baño
+baja las persianas del garaje
+abre la puerta
+despierta
+oye domo
+correcto
+incorrecto

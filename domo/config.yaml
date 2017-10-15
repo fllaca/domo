@@ -1,0 +1,36 @@
+---
+speech_to_text:
+  google:
+    lang: es-ES
+    
+  keyword:
+    hmm: /home/fllaca/learning/speech-to-text/sphinx/house_model/original-model-adapt
+    dict: /home/fllaca/learning/speech-to-text/sphinx/spanish/es.dict
+    kws: /home/fllaca/learning/speech-to-text/sphinx/keyword.kws
+    argfile: /home/fllaca/learning/speech-to-text/sphinx/house_model/original-model-adapt/feat.params
+
+  commands:
+    hmm: /home/fllaca/learning/speech-to-text/sphinx/house_model/original-model-adapt
+    dict: /home/fllaca/learning/speech-to-text/sphinx/spanish/es.dict
+    jsgf: /home/fllaca/learning/speech-to-text/sphinx/commands.gram
+    argfile: /home/fllaca/learning/speech-to-text/sphinx/house_model/original-model-adapt/feat.params
+
+  interactions:
+    hmm: /home/fllaca/learning/speech-to-text/sphinx/house_model/original-model-adapt
+    dict: /home/fllaca/learning/speech-to-text/sphinx/spanish/es.dict
+    kws: /home/fllaca/learning/speech-to-text/sphinx/interactions.kws
+    argfile: /home/fllaca/learning/speech-to-text/sphinx/house_model/original-model-adapt/feat.params
+
+  learning:
+    enabled: False
+    audio_folder: /home/fllaca/learning/speech-to-text/sphinx/house_model
+    transcription_file: /home/fllaca/learning/speech-to-text/sphinx/house_model/house_model.transcription
+    fileids_file: /home/fllaca/learning/speech-to-text/sphinx/house_model/house_model.fileids
+
+text_to_speech:
+  pico2wave:
+    lang: es-ES
+  google:
+    lang: es
+sounds:
+  ding: /home/fllaca/learning/speech-to-text/sphinx/ding.mp3

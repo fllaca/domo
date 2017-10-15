@@ -1,0 +1,33 @@
+#JSGF V1.0;
+   
+grammar commands;
+
+<open> = abrir | abre;
+<close> = cerrar | cierra;
+<turn_on> = encender | enciende;
+<turn_off> = apagar | apaga;
+<up> = subir | sube;
+<down> = baja | bajar;
+<set_alarm> = poner alarma;
+<list_alarms> = listar alarmas;
+
+<action> = <open> 
+    | <close> 
+    | <turn_on> 
+    | <turn_off> 
+    | <turn_on> 
+    | <up> 
+    | <down>
+    | <set_alarm>
+    | <list_alarms>
+    ;
+
+<object> = ventana | puerta | luz | persianas | tele | televisión | televisor;
+
+<article> = el | la | los | las;
+<from_article> = (de <article>) | del;
+
+<location> = garaje | cocina | salón | baño;
+    
+public <command> = <action> [ [<article>] <object>] [ [<from_article>] <location> ];
+
